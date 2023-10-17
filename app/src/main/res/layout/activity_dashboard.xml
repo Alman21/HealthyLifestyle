@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="412dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/shapebackground_03"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_calend"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_calender"
+                android:layout_marginEnd="8dp" />
+
+
+            <TextView
+                android:id="@+id/minggu_09_o"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_toEndOf="@id/icon_calend"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical|top"
+                android:paddingRight="50dp"
+                android:text="@string/nama_hari"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/rectangle_3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/jpg"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/hallo_bamba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hallo_hai"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/rectangle_3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hand"
+                android:layout_toEndOf="@id/hallo_bamba"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp" />
+
+            <ImageView
+                android:id="@+id/icon_notifi"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@id/icon_hand"
+                android:paddingBottom="30dp"
+                android:src="@drawable/ic_notifications" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:background="@drawable/shapebackground_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_1"
+        app:layout_constraintVertical_bias="0.041">
+
+        <ImageView
+            android:id="@+id/icon_shoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fire" />
+
+        <ImageView
+            android:id="@+id/icon_time"
+            android:src="@drawable/ic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/daily_activ"
+            android:text="@string/daily_yo"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:background="@drawable/shapebackground_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_1"
+        app:layout_constraintVertical_bias="0.307">
+
+        <TextView
+            android:id="@+id/text_yo"
+            android:text="Steps"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/some_id1"
+            android:text="4.321"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/some_id2"
+            android:text="/6.000"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="204dp"
+        android:background="@drawable/shapebackground_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_1"
+        app:layout_constraintVertical_bias="0.77">
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yeah" />
+
+        <TextView
+            android:id="@+id/kebiasaan_p"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kebiasaan_P" />
+
+        <TextView
+            android:id="@+id/cegah_stunt"
+            android:layout_width="122dp"
+            android:layout_height="76dp"
+            android:text="@string/cegah_stunting"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="81dp"
+            android:layout_height="48dp"
+            android:src="@drawable/yuhu" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
